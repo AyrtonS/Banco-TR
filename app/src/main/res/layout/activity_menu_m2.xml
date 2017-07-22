@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="res.layout.MenuM2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"></LinearLayout>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="174dp"
+                            android:orientation="vertical"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="1416dp">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Saldo"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="264dp" />
+
+                            <TextView
+                                android:id="@+id/valorSaldo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="288dp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="53dp"
+                                android:fontFamily="serif"
+                                android:text="Conta"
+                                android:textAlignment="textStart"
+                                android:textColor="#000"
+                                android:textSize="17sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="8dp" />
+
+                            <TextView
+                                android:id="@+id/contaValor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="229dp" />
+
+                        </LinearLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttonSaq"
+                            android:layout_width="274dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="#1b5e20"
+                            android:text="Realizar Saque"
+                            android:textColor="#fff"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="174dp"
+                            android:orientation="vertical"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="1416dp">
+
+                            <TextView
+                                android:id="@+id/valorTransField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Valor"
+                                android:textSize="17sp"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="264dp" />
+
+
+                            <EditText
+                                android:id="@+id/vsField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttonTrans"
+                            android:layout_width="274dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:background="#1b5e20"
+                            android:text="Transferir"
+                            android:textColor="#fff"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="174dp"
+                            android:orientation="vertical"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="1416dp">
+
+                            <TextView
+                                android:id="@+id/valorTransField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Valor"
+                                android:textSize="17sp"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="264dp" />
+
+
+                            <EditText
+                                android:id="@+id/vtField"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/contaTransText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="53dp"
+                                android:fontFamily="serif"
+                                android:text="Conta"
+                                android:textAlignment="textStart"
+                                android:textColor="#000"
+                                android:textSize="17sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="8dp" />
+
+
+
+                            <EditText
+                                android:id="@+id/contaTrans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                 />
+
+
+
+
+                        </LinearLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
